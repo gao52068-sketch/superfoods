@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health Picks — LOS ARCOS</title>
+<meta name="description" content="Curated health resources: a superfoods guide (EN) and a diabetes program (ES). Página puente con recursos de salud seleccionados.">
+<style>
+  :root{
+    --bg:#f7f5f0; --card:#ffffff; --ink:#1e2a24; --muted:#5c6a62;
+    --green:#1d7a4f; --green-dark:#145c3a; --line:#e3ded2;
+    --ad-bg:#fffaf0; --ad-line:#d9c98f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .wrap{max-width:680px;margin:0 auto;padding:20px 16px 40px}
+  header{text-align:center;padding:22px 8px 8px}
+  .brand{font-size:13px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+  h1{font-size:28px;line-height:1.25;margin:8px 0 6px}
+  .sub{color:var(--muted);font-size:15px;max-width:520px;margin:0 auto}
+  .langbar{display:flex;justify-content:center;gap:8px;margin:16px 0 4px}
+  .langbar button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 16px;font-size:14px;cursor:pointer}
+  .langbar button.active{background:var(--green);color:#fff;border-color:var(--green)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:18px}
+  .card .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:999px;background:#e8f3ec;color:var(--green-dark);margin-bottom:10px}
+  .card h2{font-size:21px;line-height:1.3;margin-bottom:6px}
+  .card p{font-size:15px;color:var(--muted)}
+  .cta{display:block;text-align:center;background:var(--green);color:#fff;text-decoration:none;font-weight:700;font-size:16px;border-radius:12px;padding:14px 16px;margin-top:14px}
+  .cta:active,.cta:hover{background:var(--green-dark)}
+  .note{font-size:12.5px;color:var(--muted);margin-top:10px;text-align:center}
+  /* ===== Ad slot: paste Adsterra Native Banner code where marked below ===== */
+  .adslot{background:var(--ad-bg);border:1.5px dashed var(--ad-line);border-radius:16px;padding:14px;margin-top:18px;text-align:center}
+  .adslot .adlabel{font-size:11px;letter-spacing:2px;color:#8a7430;text-transform:uppercase;margin-bottom:8px}
+  .adslot .adplaceholder{font-size:13.5px;color:#8a7430}
+  footer{margin-top:26px;text-align:center;font-size:13px;color:var(--muted)}
+  footer .social{margin:10px 0}
+  footer .social a{color:var(--green-dark);text-decoration:none;margin:0 7px;font-weight:600}
+  .disclosure{font-size:12px;color:var(--muted);background:#efece4;border-radius:12px;padding:12px 14px;margin-top:18px;text-align:left}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">LOS ARCOS</div>
+    <h1 data-en="Health resources we recommend" data-es="Recursos de salud que recomendamos">Health resources we recommend</h1>
+    <p class="sub" data-en="Two guides we share with our readers — one in English, one in Spanish. Short, practical, no hype."
+       data-es="Dos guías que compartimos con nuestros lectores: una en inglés y otra en español. Cortas, prácticas, sin exageraciones.">Two guides we share with our readers — one in English, one in Spanish. Short, practical, no hype.</p>
+    <div class="langbar">
+      <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+      <button id="btn-es" onclick="setLang('es')">Español</button>
+    </div>
+  </header>
+
+  <!-- Resource 1: Superfoods (EN) -->
+  <section class="card">
+    <span class="tag" data-en="ENGLISH · SUPERFOODS" data-es="INGLÉS · SUPERFOODS">ENGLISH · SUPERFOODS</span>
+    <h2 data-en="The Encyclopedia of Power Foods" data-es="La enciclopedia de los superalimentos">The Encyclopedia of Power Foods</h2>
+    <p data-en="10 nutrient-packed foods — what each one actually does, how to eat it, and a simple 7-day way to add them to real meals."
+       data-es="10 alimentos llenos de nutrientes: qué hace realmente cada uno, cómo comerlo y una forma sencilla de sumarlos a tus comidas en 7 días.">10 nutrient-packed foods — what each one actually does, how to eat it, and a simple 7-day way to add them to real meals.</p>
+    <a class="cta" href="https://wsl.365dailyhealth.com/landing-sale-page1713272576177#aff=longgong313c33e" target="_blank" rel="noopener sponsored"
+       data-en="See the superfoods guide →" data-es="Ver la guía de superalimentos →">See the superfoods guide →</a>
+    <p class="note" data-en="Affiliate link — we may earn a commission at no extra cost to you." data-es="Enlace de afiliado: podemos ganar una comisión sin costo extra para ti.">Affiliate link — we may earn a commission at no extra cost to you.</p>
+  </section>
+
+  <!-- Resource 2: Diabetes (ES) -->
+  <section class="card">
+    <span class="tag" data-en="SPANISH · DIABETES" data-es="ESPAÑOL · DIABETES">SPANISH · DIABETES</span>
+    <h2 data-en="Clave Diabetes — a practical program in Spanish" data-es="Clave Diabetes: un programa práctico en español">Clave Diabetes — a practical program in Spanish</h2>
+    <p data-en="A step-by-step Spanish-language program about everyday blood-sugar habits: food, movement, sleep and routine."
+       data-es="Un programa paso a paso en español sobre los hábitos diarios y el azúcar en sangre: comida, movimiento, sueño y rutina.">A step-by-step Spanish-language program about everyday blood-sugar habits: food, movement, sleep and routine.</p>
+    <a class="cta" href="https://www.digistore24.com/redir/308052/longgong313c33e/" target="_blank" rel="noopener sponsored"
+       data-en="See Clave Diabetes →" data-es="Ver Clave Diabetes →">See Clave Diabetes →</a>
+    <p class="note" data-en="Affiliate link — we may earn a commission at no extra cost to you." data-es="Enlace de afiliado: podemos ganar una comisión sin costo extra para ti.">Affiliate link — we may earn a commission at no extra cost to you.</p>
+  </section>
+
+  <!-- ===== AD SLOT (Adsterra) =====
+       HOW TO ACTIVATE:
+       1) In your Adsterra publisher account, create a NATIVE BANNER ad unit
+          (recommended) — do NOT create Popunder for this page.
+       2) Copy the code Adsterra gives you.
+       3) Paste it in place of the .adplaceholder paragraph inside the box below.
+       The box is already labelled "Advertisement" on purpose: keep the label.
+       Never disguise the ad as content or as a download/play button.
+  -->
+  <section class="adslot" aria-label="Advertisement">
+    <div class="adlabel" data-en="Advertisement" data-es="Publicidad">Advertisement</div>
+    <!-- PASTE ADSTERRA NATIVE BANNER CODE HERE -->
+    <p class="adplaceholder" data-en="Ad space — Adsterra code will appear here once activated." data-es="Espacio publicitario: aquí aparecerá el código de Adsterra cuando se active.">Ad space — Adsterra code will appear here once activated.</p>
+    <!-- /PASTE ADSTERRA CODE -->
+  </section>
+
+  <div class="disclosure" data-en="Disclosure: this page contains affiliate links and third-party advertising. We may earn a commission if you buy through a link, at no extra cost to you. Nothing on this page is medical advice; talk to your own doctor about your health."
+       data-es="Aviso: esta página contiene enlaces de afiliado y publicidad de terceros. Podemos ganar una comisión si compras a través de un enlace, sin costo extra para ti. Nada de lo aquí publicado es consejo médico; habla con tu propio médico sobre tu salud.">Disclosure: this page contains affiliate links and third-party advertising. We may earn a commission if you buy through a link, at no extra cost to you. Nothing on this page is medical advice; talk to your own doctor about your health.</div>
+
+  <footer>
+    <div>LOS ARCOS</div>
+    <div class="social">
+      <a href="https://www.instagram.com/zheng20262026" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://www.tiktok.com/@zrj2026" target="_blank" rel="noopener">TikTok</a> ·
+      <a href="https://x.com/juanzheng12" target="_blank" rel="noopener">X</a> ·
+      <a href="https://www.facebook.com/share/1HmiTe7P35/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <div data-en="Made with care in Buenos Aires, Argentina." data-es="Hecho con dedicación en Buenos Aires, Argentina.">Made with care in Buenos Aires, Argentina.</div>
+  </footer>
+
+</div>
+<script>
+function setLang(l){
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-'+l);
+  });
+  document.getElementById('btn-en').classList.toggle('active', l==='en');
+  document.getElementById('btn-es').classList.toggle('active', l==='es');
+  document.documentElement.lang = l;
+}
+</script>
+</body>
+</html>
